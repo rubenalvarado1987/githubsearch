@@ -1,6 +1,6 @@
 <div class="container">
   <app-navbar title="Dashboard"></app-navbar> 
-  <div class="row">
+  <div class="row" *ngIf="service.name">
     <div class="img-avatar" >
       <img class="avatar" src="{{service.avatar_url}}">
     </div>
@@ -23,6 +23,9 @@
       </div>
 
     </div>
+  </div>
+  <div class="row notfound"  *ngIf="!service.name">
+    <h2>Usuario no encontrado :(</h2>
   </div>
   
 </div>
