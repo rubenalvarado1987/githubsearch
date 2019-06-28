@@ -3,6 +3,5 @@ export const environment = {
   url_api: "https://api.github.com/",
   api_key: "",
   endpoint_search: "users/",
-  endpoint_id: "",
-  endpoint_title: ""
+  endpoint_repos: "/repos",
 };
