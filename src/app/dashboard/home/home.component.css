@@ -1,0 +1,13 @@
+.img-avatar{
+    width: 400px;
+    float: left;
+    padding: 5px;
+}
+.detalle-usuario{
+    padding: 5px;
+    width: 400px;
+    float: left;
+}
+.avatar{
+    width: 400px;
+}
