@@ -11,3 +11,8 @@
 .avatar{
     width: 400px;
 }
+.detalle-repo{
+    padding: 5px;
+    width: 400px;
+    float: left;
+}

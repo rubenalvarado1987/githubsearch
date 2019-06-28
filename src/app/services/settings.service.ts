@@ -10,6 +10,8 @@ import {
 } from "@angular/common/http";
 import { catchError, tap, map } from "rxjs/operators";
 import { User } from 'app/models/user.model';
+import { Repos } from 'app/models/repos.model';
+
 
 @Injectable()
 export class SettingsService {
@@ -27,6 +29,8 @@ export class SettingsService {
   email: string= '';
   following: number= 0;
   name: string= '';
+
+  repos: Repos[];
  
   constructor(private http: HttpClient) { }
 

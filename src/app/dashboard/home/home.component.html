@@ -1,6 +1,6 @@
 <div class="container">
   <app-navbar title="Dashboard"></app-navbar> 
-  <div class="row" style="margin-top: 10px">
+  <div class="row">
     <div class="img-avatar" >
       <img class="avatar" src="{{service.avatar_url}}">
     </div>
@@ -9,6 +9,20 @@
       <h4>Número de seguidores: {{service.following}}</h4>
       <h4>E-mail: {{service.email}}</h4>
       <h4>Bio: {{service.bio}}</h4>
+
+      <div class="row" class="detalle-repo">
+        <br>
+        <h4>Repositorios del Usuario:</h4>
+        <br>
+        <div class="detalle-repo" *ngFor="let repo of service.repos" >
+          <h4>Nombre: {{repo.name}}</h4>
+          <h4>Descripción: {{repo.description}}</h4>
+          <h4>Valoraciones: {{repo.stargazers_count}}</h4>
+        </div>
+        <hr>
+      </div>
+
     </div>
   </div>
+  
 </div>

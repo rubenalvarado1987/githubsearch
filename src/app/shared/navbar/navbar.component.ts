@@ -44,6 +44,7 @@ export class NavbarComponent implements OnInit {
         this.service.getRepos(this.txtInput).subscribe(data => {
 
           console.log("Repositorios:",data)
+          this.service.repos = data;
   
         })
       }
